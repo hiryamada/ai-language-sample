@@ -16,7 +16,7 @@ Console.WriteLine($"\t{detectedLanguage.Name},\tISO-6391: {detectedLanguage.Iso6
 Console.WriteLine("===========================");
 Console.WriteLine("キー フレーズ抽出の例:");
 
-var keyPhrasesResponse = client.ExtractKeyPhrases("料理は美味しくスタッフは親切だった");
+var keyPhrasesResponse = client.ExtractKeyPhrases("Dr. Smith has a very modern medical office, and she has great staff.");
 foreach (string keyphrase in keyPhrasesResponse.Value)
 {
     Console.WriteLine($"\t{keyphrase}");
